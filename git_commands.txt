@@ -1,0 +1,23 @@
+Git commands:
+git config --global user.name "username"-->to configure username
+git config --global user.email "email"-->to configure password
+git config --global init.defaultBranch main-->to create a defalut branch main
+git init-->to initialize
+git add .-->add to staging area
+git commit -m "message" -->to create a snapshot
+git log-->to see the commit code
+git log "commit code"-->go to desired commit
+git checkout -f branchname-->force change
+
+
+git-->local repository
+github-->remote repository
+
+To connect local repo with remote repo:
+create a repo in github
+git remote add origin https://github.com/aishwariya-ai/Git.git
+git push -u origin main
+ 
+
+
+
