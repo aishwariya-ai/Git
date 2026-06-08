@@ -5,18 +5,68 @@ git config --global init.defaultBranch main-->to create a defalut branch main
 git init-->to initialize
 git add .-->add to staging area
 git commit -m "message" -->to create a snapshot
-git log-->to see the commit code
-git log "commit code"-->go to desired commit
+git log-->to see the commit id
+git checkout "commit id"-->go to desired commit
 git checkout -f branchname-->force change
 
-
-git-->local repository
-github-->remote repository
 
 To connect local repo with remote repo:
 create a repo in github
 git remote add origin https://github.com/aishwariya-ai/Git.git
 git push -u origin main
+
+BRANCH:
+git branch branchname-->to create a new branch
+git checkout branchname-->to switch to an existing branch
+git checkout -b branchname-->to create and switch to a new branch
+git checkout -f branchname-->force switch branch and discard local changes
+
+MERGE:
+git merge branchname-->to merge the specified branch into the current branch
+git merge --abort-->to cancel a merge when conflicts occur
+
+RESET:
+git reset --soft HEAD~1-->remove last commit and keep changes staged
+git reset --mixed HEAD~1-->remove last commit and keep changes unstaged
+git reset --hard HEAD~1-->remove last commit and discard all changes
+git reset commit_id-->move HEAD to a specific commit
+
+REVERT:
+git revert commit_id-->undo a commit by creating a new commit
+
+STASH:
+git stash-->temporarily save modified tracked files
+git stash -u-->stash tracked and untracked files
+git stash list-->view all stashes
+git stash apply-->apply latest stash without deleting it
+git stash pop-->apply latest stash and remove it from stash list
+git stash drop stash@{0}-->delete a specific stash
+
+
+git fetch-->download latest changes from remote repository
+
+git pull-->fetch and merge latest changes from remote repository
+
+git push-->push local commits to remote repository
+git push -u origin main-->push and set upstream branch
+
+git remote -v-->view remote repository details
+
+git clone repository_url-->copy remote repository to local machine
+
+Git Concepts:
+
+git-->local repository
+
+github-->remote repository
+
+HEAD-->pointer to the current commit
+
+Working Directory-->where files are edited
+
+Staging Area-->where files are prepared for commit
+
+Commit-->snapshot of project at a specific point in time
  
 
 
